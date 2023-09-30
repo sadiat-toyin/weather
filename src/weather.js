@@ -8,7 +8,7 @@ export default function Weather() {
       height="80"
       width="80"
       radius="9"
-      color="blue"
+      color="red"
       ariaLabel="three-dots-loading"
       wrapperStyle
       wrapperClass
