@@ -9,7 +9,11 @@ function App() {
         <WeatherSearch />
         <footer>
           This project was created by Sadiat Moshood and is {""}
-          <a href="https://github.com/sadiat-toyin/weather" target="_blank">
+          <a
+            href="https://github.com/sadiat-toyin/weather"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Open-source on Github
           </a>
         </footer>
