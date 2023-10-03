@@ -55,6 +55,8 @@ export default function Weather() {
   }
 }
 
+//Coded by Sadiat Moshood from shecode
+
 /*import { Audio } from "react-loader-spinner";
 
 import React from "react";

@@ -7,6 +7,12 @@ function App() {
       <header className="App-header">
         <h1>Hello world!!! </h1>
         <WeatherSearch />
+        <footer>
+          This project was created by Sadiat Moshood and is {""}
+          <a href="https://github.com/sadiat-toyin/weather" target="_blank">
+            Open-source on Github
+          </a>
+        </footer>
       </header>
     </div>
   );
