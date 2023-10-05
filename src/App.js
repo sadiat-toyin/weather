@@ -14,7 +14,8 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open-source on Github
+            Open-source on Github and hosted on
+            https://bejewelled-bubblegum-2fc00e.netlify.app/
           </a>
         </footer>
       </header>
