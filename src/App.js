@@ -8,14 +8,21 @@ function App() {
         <h1>Hello world!!! </h1>
         <WeatherSearch />
         <footer>
-          This project was created by Sadiat Moshood and is {""}
+          This project was coded by Sadiat Moshood and is{" "}
           <a
             href="https://github.com/sadiat-toyin/weather"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open-source on Github and hosted on
-            https://bejewelled-bubblegum-2fc00e.netlify.app/
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://bejewelled-bubblegum-2fc00e.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
           </a>
         </footer>
       </header>
