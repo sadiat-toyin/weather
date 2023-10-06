@@ -4,7 +4,7 @@ import WeatherSearch from "./WeatherSearch";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="container">
         <h1>Hello world!!! </h1>
         <WeatherSearch />
         <footer>
@@ -25,7 +25,7 @@ function App() {
             hosted on Netlify
           </a>
         </footer>
-      </header>
+      </div>
     </div>
   );
 }
