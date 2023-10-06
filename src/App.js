@@ -1,12 +1,13 @@
 import "./App.css";
-import WeatherSearch from "./WeatherSearch";
+//import WeatherSearch from "./WeatherSearch";
+import Weather from "./Weather";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Hello world!!! </h1>
-        <WeatherSearch />
+        {/* <WeatherSearch /> */}
+        <Weather />
         <footer>
           This project was coded by Sadiat Moshood and is{" "}
           <a
