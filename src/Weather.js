@@ -25,10 +25,10 @@ export default function Weathertest() {
       </ul>
       <div className="row">
         <div className="col-6">
-          {/* <img 
+          <img
             src="https://ss1.gstatic.com/onebox/weather/64/sunny.png"
             alt="weather-icon"
-          />*/}
+          />
           6c
         </div>
         <div className="col-6">
