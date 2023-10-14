@@ -76,12 +76,13 @@ export default function Weathertest(props) {
     );
   } else {
     const apiKey = "5tc5a34ao652ab12c5cdef23ce70b8f2";
-    //let apiUrl = "https://api.shecodes.io/weather/v1/current?query={query}&key={key}
+    //let apiUrl = "https://api.shecodes.io/weather/v1/current?query={query}&key={apiKey }
     //";
 
     let apiUrl =
-      //"https://api.shecodes.io/weather/v1/current?query={city}lat=38.71667&lon=-9.13333&key=5tc5a34ao652ab12c5cdef23ce70b8f2&units=metric";
-      "https://api.shecodes.io/weather/v1/current?query={props.defaultCity}&key=5tc5a34ao652ab12c5cdef23ce70b8f2&units=metric";
+      "https://api.openweathermap.org/data/2.5/weather?q={props.defaultCity}&appid={API key}";
+    //"https://api.shecodes.io/weather/v1/current?query={city}lat=38.71667&lon=-9.13333&key=5tc5a34ao652ab12c5cdef23ce70b8f2&units=metric";
+    //"https://api.shecodes.io/weather/v1/current?query={props.defaultCity}&key=5tc5a34ao652ab12c5cdef23ce70b8f2&units=metric";
     axios.get(apiUrl).then(handleResponse);
 
     return "loading...";
