@@ -1,5 +1,6 @@
 import React from "react";
-import "./WeatherSearch.css";
+import "./Weather.css";
+import "./App.css";
 
 export default function Weathertest() {
   return (
@@ -11,10 +12,16 @@ export default function Weathertest() {
               type="search"
               placeholder="Enter a city..."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="search" className="btn btn-primary" />
+            <input
+              type="submit"
+              value="search"
+              className="btn btn-primary"
+              w="100"
+            />
           </div>
         </div>
       </form>
@@ -25,11 +32,17 @@ export default function Weathertest() {
       </ul>
       <div className="row">
         <div className="col-6">
-          <img
-            src="https://ss1.gstatic.com/onebox/weather/64/sunny.png"
-            alt="weather-icon"
-          />
-          6c
+          <div className="clearfix">
+            <img
+              src="https://ss1.gstatic.com/onebox/weather/64/sunny.png"
+              alt="Mostly Cloudy"
+              className="float-left"
+            />
+            <div className="float-left">
+              <span className="temperature">6</span>
+              <span className="temperature">c</span>
+            </div>
+          </div>
         </div>
         <div className="col-6">
           <ul>
