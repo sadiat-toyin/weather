@@ -7,11 +7,11 @@ export default function Weathertest(props) {
 
   function handleResponse(response) {
     setWeatherData({
-      ready: "true",
-      temperature: "response.data.main.temp",
-      humidity: "response.data.main.humidity",
+      ready: true,
+      temperature: response.data.main.temp,
+      humidity: response.data.main.humidity,
       date: "Wednesday 07:00",
-      description: "response.data.weather[0].description",
+      description: response.data.weather[0].description,
       iconUrl:
         "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png",
       //"https://ss1.gstatic.com/onebox/weather/64/partly_cloudy.png",
@@ -75,12 +75,11 @@ export default function Weathertest(props) {
       </div>
     );
   } else {
-    const apiKey = "5tc5a34ao652ab12c5cdef23ce70b8f2";
+    // const apiKey = "5tc5a34ao652ab12c5cdef23ce70b8f2";
     //let apiUrl = "https://api.shecodes.io/weather/v1/current?query={query}&key={apiKey }
     //";
-
-    let apiUrl =
-      "https://api.openweathermap.org/data/2.5/weather?q={props.defaultCity}&appid={API key}";
+    const apiKey = "ad793a6d772939c31783de5822791acf";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}`;
     //"https://api.shecodes.io/weather/v1/current?query={city}lat=38.71667&lon=-9.13333&key=5tc5a34ao652ab12c5cdef23ce70b8f2&units=metric";
     //"https://api.shecodes.io/weather/v1/current?query={props.defaultCity}&key=5tc5a34ao652ab12c5cdef23ce70b8f2&units=metric";
     axios.get(apiUrl).then(handleResponse);
