@@ -16,7 +16,6 @@ export default function Weathertest(props) {
       description: response.data.weather[0].description,
       iconUrl:
         "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png",
-      //"https://ss1.gstatic.com/onebox/weather/64/partly_cloudy.png",
       wind: response.data.wind.speed,
       city: response.data.name,
     });
@@ -48,6 +47,8 @@ export default function Weathertest(props) {
                 placeholder="Enter a city..."
                 className="form-control"
                 autoFocus="on"
+                value={city} // Use the city state as the value
+                onChange={handleCityChange} // Update the city state onChange
               />
             </div>
             <div className="col-3">
@@ -56,7 +57,6 @@ export default function Weathertest(props) {
                 value="search"
                 className="btn btn-primary"
                 w="100"
-                onChange={handleCityChange}
               />
             </div>
           </div>
@@ -66,6 +66,6 @@ export default function Weathertest(props) {
     );
   } else {
     search();
-    return "loading...";
+    return "Loading...";
   }
 }
