@@ -9,7 +9,16 @@ function App() {
         {/* <WeatherSearch /> */}
         <Weather defaultCity="New York" />
         <footer>
-          This project was coded by Sadiat Moshood and is{" "}
+          This project was coded by
+          <a
+            href="https://sadiatmoshood04@gmail.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Sadiat Moshood
+          </a>
+          and is{" "}
           <a
             href="https://github.com/sadiat-toyin/weather"
             target="_blank"
