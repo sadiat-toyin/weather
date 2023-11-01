@@ -1,6 +1,7 @@
 .weather {
   font-family: ariel, sans-serif;
   border: 1px solid #dadde1;
+  background-color: bisque;
   color: rgb(135, 135, 135);
   padding: 16px;
   margin: 30px auto;
@@ -8,6 +9,7 @@
 }
 .weather form {
   margin-bottom: 20px;
+  color: antiquewhite;
 }
 
 .weather h1 {
@@ -50,6 +52,5 @@
   font-size: 16px;
   font-weight: 400;
   position: relative;
-
   margin-left: 5px;
 }
